@@ -1,0 +1,144 @@
+.main {
+    background-color: #dae3e7;
+    .container {
+        padding: 20px 25px;
+        .box {
+            margin: 40px auto;
+            background-color: white;
+            padding: 20px 20px;
+            .box_title {
+                font-family: "Montserrat", sans-serif;
+                font-weight: bold;
+                font-size: 24px;
+            }
+            .box_content {
+                text-align: center;
+                color: #434343;
+                font-family: "Lato", sans-serif;
+                font-weight: bold;
+                font-size: 16px;
+                .title {
+                    color: #5f6b77;
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+                .desc {
+                    color: #778492;
+                    font-family: "Lato", sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    width: 100%;
+                }
+            }
+            .contact {
+                display: flex;
+                flex-direction: column;
+                .location {
+                    display: flex;
+                    align-items: baseline;
+                    p {
+                        margin: 0;
+                        margin-left: 20px;
+                    }
+                }
+                .mail {
+                    display: flex;
+                    align-items: baseline;
+                    margin: 10px 0;
+                    a {
+                        display: inline-block;
+                        text-decoration: none;
+                        color: #3aaa64;
+                        margin-left: 15px;
+                    }
+                }
+                .site {
+                    display: flex;
+                    align-items: baseline;
+                    a {
+                        display: inline-block;
+                        text-decoration: none;
+                        color: #3aaa64;
+                        margin-left: 15px;
+                    }
+                }
+            }
+            .skills {
+                display: flex;
+                flex-direction: column;
+
+                .skill_info {
+                    display: flex;
+                    justify-content: space-between;
+                    .name {
+                        color: #778492;
+                        font-family: "Montserrat", sans-serif;
+                        font-weight: bold;
+                        font-size: 14px;
+                    }
+                    .level {
+                        color: #ccd1d6;
+                        font-family: "Lato", sans-serif;
+                        font-weight: 400;
+                        font-size: 12px;
+                    }
+                }
+                .progress_bar {
+                    width: 100%;
+                    height: 10px;
+                    margin-bottom: 20px;
+                    .bar {
+                        background-color: #e8e8e8;
+                        height: 10px;
+                        width: 100%;
+                        div {
+                            background-color: #66cb8c;
+                            height: 10px;
+                        }
+                        .python {
+                            width: 64%;
+                        }
+                        .java {
+                            width: 24%;
+                        }
+                        .www {
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+            .studies {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                .studies_div {
+                    display: flex;
+                    align-items: center;
+                    .title {
+                        margin: 0;
+                        margin-left: 20px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main {
+        .container {
+            display: flex;
+            .section_left {
+                .box {
+                    width: 95%;
+                }
+            }
+        }
+    }
+}

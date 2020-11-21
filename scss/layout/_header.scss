@@ -1,0 +1,95 @@
+.header {
+    border-top: 15px solid #778492;
+    .container {
+        text-align: center;
+        .profile {
+            .profile_image {
+                display: block;
+                margin: 0 auto;
+                margin-top: 40px;
+                margin-bottom: 20px;
+                width: 120px;
+                height: 120px;
+                border: 1px solid transparent;
+                border-radius: 50%;
+                background: transparent url(../../assets/moi.jpg) no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            h1 {
+                margin: 0;
+                color: #49515a;
+                font-family: "Montserrat", sans-serif;
+                font-weight: bold;
+                font-size: 32px;
+            }
+            h2 {
+                margin: 0;
+                color: #778492;
+                font-family: "Lato", sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+            }
+            .links {
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    margin: 40px auto;
+                    padding: 0 5px;
+                }
+                .facebook {
+                    color: #4867aa;
+                }
+                .github {
+                    color: black;
+                }
+                .instagram {
+                    color: black;
+                }
+            }
+        }
+        .contact_me {
+            a {
+                display: inline-block;
+                text-decoration: none;
+                color: white;
+                font-family: "Lato", sans-serif;
+                font-weight: bold;
+                font-size: 14px;
+                text-transform: uppercase;
+                background-color: #49ac43;
+                margin: 0 auto;
+                margin-bottom: 40px;
+                padding: 8.5px 17.5px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header {
+        .container {
+            padding: 50px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .profile {
+                .profile_image {
+                    margin: 0;
+                }
+                display: flex;
+                align-items: center;
+                .profile_informations {
+                    margin: 0px;
+                    margin-left: 40px;
+                    text-align: left;
+                    .links {
+                        a {
+                            margin: 10px 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
